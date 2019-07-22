@@ -1,6 +1,6 @@
 
 // define o servidor
-var express = require(‘express’);
+var express = require('express');
 var port = process.env.PORT || 3000;
 var app = express();
 
@@ -68,13 +68,13 @@ classify(process.argv[2], process.argv[3])
 
 */
 
-app.get(‘/’, async (req, res) {
+app.get('/', async (req, res) {
  var model = 'mobilenet/model.json';
  var path = 'panda.jpg' ;
- console.log(`Classification has started`);
+ console.log('Classification has started');
  //var predictions = await classify (model, path);
- res.send(JSON.stringify({ Hello: ‘World’}));
+ res.send(JSON.stringify({ Hello: 'World'}));
 });
 app.listen(port, function () {
- console.log(`Example app listening on port !`);
+ console.log('Example app listening on port !');
 });
