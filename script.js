@@ -61,9 +61,9 @@ const classify = async (model, path) => {
   return predictions
 }
 
-if (process.argv.length !== 4) throw new Error('incorrect arguments: node script.js <MODEL> <IMAGE_FILE>')
+//if (process.argv.length !== 4) throw new Error('incorrect arguments: node script.js <MODEL> <IMAGE_FILE>')
 
-classify(process.argv[2], process.argv[3])
+//classify(process.argv[2], process.argv[3])
 
 
 
