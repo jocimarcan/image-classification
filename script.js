@@ -4,7 +4,7 @@ var express = require('express');
 var port = process.env.PORT || 3000;
 var app = express();
 
-/*
+
 const tf = require('@tensorflow/tfjs')
 const mobilenet = require('@tensorflow-models/mobilenet');
 require('@tensorflow/tfjs-node')
@@ -66,8 +66,7 @@ if (process.argv.length !== 4) throw new Error('incorrect arguments: node script
 classify(process.argv[2], process.argv[3])
 
 
-*/
-//test etse
+
 app.get('/',  function(req, res) {
  var model = 'mobilenet/model.json';
  var path = 'panda.jpg' ;
