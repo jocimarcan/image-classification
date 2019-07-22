@@ -67,7 +67,7 @@ const classify = async (model, path) => {
 
 
 
-app.get('/',  async(req, res, next) {
+app.get('/',  async(req, res, next) => {
  try {
 	 var model = 'mobilenet/model.json';
 	 var path = 'panda.jpg' ;
