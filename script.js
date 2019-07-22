@@ -68,7 +68,7 @@ classify(process.argv[2], process.argv[3])
 
 */
 
-app.get('/', async (req, res) {
+app.get('/',  function(req, res) {
  var model = 'mobilenet/model.json';
  var path = 'panda.jpg' ;
  console.log('Classification has started');
