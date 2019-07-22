@@ -67,7 +67,7 @@ classify(process.argv[2], process.argv[3])
 
 
 */
-
+//test etse
 app.get('/',  function(req, res) {
  var model = 'mobilenet/model.json';
  var path = 'panda.jpg' ;
