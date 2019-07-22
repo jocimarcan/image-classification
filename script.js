@@ -67,12 +67,12 @@ const classify = async (model, path) => {
 
 
 
-app.get('/',  function(req, res) {
+app.get('/',  async(req, res) {
  var model = 'mobilenet/model.json';
  var path = 'panda.jpg' ;
  console.log('Classification has started');
- //var predictions = await classify (model, path);
- res.send(JSON.stringify({ Hello: 'World'}));
+ var predictions = await classify (model, path);
+ res.send(JSON.stringify(predictions));
 });
 app.listen(port, function () {
  console.log('Example app listening on port !');
