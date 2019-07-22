@@ -70,7 +70,7 @@ const classify = async (model, path) => {
 app.get('/',  async(req, res, next) => {
  try {
 	 var model = 'mobilenet/model.json';
-	 var path = 'panda.jpg' ;
+	 var path = 'panda.JPG' ;
 	 console.log('Classification has started');
 	 var predictions = await classify (model, path);
 	 res.send(JSON.stringify(predictions));
