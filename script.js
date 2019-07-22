@@ -1,3 +1,10 @@
+
+// define o servidor
+var express = require(‘express’);
+var port = process.env.PORT || 3000;
+var app = express();
+
+/*
 const tf = require('@tensorflow/tfjs')
 const mobilenet = require('@tensorflow-models/mobilenet');
 require('@tensorflow/tfjs-node')
@@ -59,16 +66,13 @@ if (process.argv.length !== 4) throw new Error('incorrect arguments: node script
 classify(process.argv[2], process.argv[3])
 
 
+*/
 
-// in sublime
-var express = require(‘express’);
-var port = process.env.PORT || 3000;
-var app = express();
 app.get(‘/’, async (req, res) {
  var model = 'mobilenet/model.json';
  var path = 'panda.jpg' ;
  console.log(`Classification has started`);
- var predictions = await classify (model, path);
+ //var predictions = await classify (model, path);
  res.send(JSON.stringify({ Hello: ‘World’}));
 });
 app.listen(port, function () {
